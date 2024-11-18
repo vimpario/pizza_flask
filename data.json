@@ -13,5 +13,10 @@
         "name": "Vegan",
         "price": 52.2,
         "description": "Classic vegan pizza with vegetables"
+    },
+    {
+        "name": "Russian",
+        "price": 52.2,
+        "description": "Classic russian pizza with dumplings"
     }
 ]
