@@ -18,5 +18,10 @@
         "name": "Russian",
         "price": 52.2,
         "description": "Classic russian pizza with dumplings"
+    },
+    {
+        "name": "Meat",
+        "price": 32.0,
+        "description": "Pizza with so much meat"
     }
 ]

@@ -1,12 +1,18 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, render_template
 from .models import read_data, write_data
 
-pizza_bp = Blueprint('hello', __name__)
+pizza_bp = Blueprint('pizza_data', __name__)
+
+
 
 @pizza_bp.route('/data', methods=['GET'])
 def get_data():
     data = read_data()
     return jsonify(data)
+
+@pizza_bp.route('/')
+def index():
+    return render_template('index.html')
 
 @pizza_bp.route('/data', methods=['POST'])
 def add_data():
