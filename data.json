@@ -8,5 +8,10 @@
         "name": "Pepperonni",
         "price": 52.2,
         "description": "Classic pizza with peppronni, and other"
+    },
+    {
+        "name": "Vegan",
+        "price": 52.2,
+        "description": "Classic vegan pizza with vegetables"
     }
 ]
