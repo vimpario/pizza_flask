@@ -13,6 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>`;
                 tableBody.innerHTML += row;
             });
+
+            const menuContainer = document.getElementById('menu-data-card');
+            menuContainer.innerHTML = '';
+
+            data.forEach(item => {
+                const card = `
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.name}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$${item.price.toFixed(2)}</h6>
+                            <p class="card-text">${item.description}</p>
+                        </div>
+                    </div>
+                </div>`;
+                menuContainer.innerHTML += card;
+            });
         })
         .catch(error => console.error('Error fetching data:', error));
 
