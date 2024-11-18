@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Margherita",
+        "price": 10.99,
+        "description": "Classic pizza with tomato, mozzarella, and basil"
+    },
+    {
+        "name": "Pepperonni",
+        "price": 52.2,
+        "description": "Classic pizza with peppronni, and other"
+    }
+]
