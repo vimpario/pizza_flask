@@ -7,7 +7,8 @@ def read_data():
     if DATA_FILE.exists():
         with open(DATA_FILE, 'r') as file:
             return json.load(file)
-    return []
+    else:
+        raise FileNotFoundError("Data file not found.")
 
 def write_data(data):
     with open(DATA_FILE, 'w') as file:

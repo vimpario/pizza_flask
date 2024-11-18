@@ -23,5 +23,10 @@
         "name": "Meat",
         "price": 32.0,
         "description": "Pizza with so much meat"
+    },
+    {
+        "name": "Meat",
+        "price": 32.0,
+        "description": "Pizza with so much meat"
     }
 ]
