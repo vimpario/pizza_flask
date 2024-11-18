@@ -19,17 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
             data.forEach(item => {
                 const card = `
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">$${item.price.toFixed(2)}</h6>
                             <p class="card-text">${item.description}</p>
+                            <button class="btn btn-primary btn-sm view-details" data-bs-toggle="modal" data-bs-target="#detailsModal" data-name="${item.name}" data-price="${item.price}" data-description="${item.description}">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>`;
                 menuContainer.innerHTML += card;
             });
+            
+            
         })
         .catch(error => console.error('Error fetching data:', error));
 
@@ -78,5 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error:', error);
             alert('Failed to add item. Please try again.');
         });
+    });
+
+    document.body.addEventListener('click', event => {
+        if (event.target.classList.contains('view-details')) {
+            const button = event.target;
+            const name = button.getAttribute('data-name');
+            const price = button.getAttribute('data-price');
+            const description = button.getAttribute('data-description');
+
+            document.getElementById('modal-name').innerText = name;
+            document.getElementById('modal-price').innerText = `$${parseFloat(price).toFixed(2)}`;
+            document.getElementById('modal-description').innerText = description;
+        }
     });
 });

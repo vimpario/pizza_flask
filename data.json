@@ -38,5 +38,20 @@
         "name": "dwsd",
         "price": 12,
         "description": "fdfsdfdssdf"
+    },
+    {
+        "name": "\u0444\u044b\u0432\u0444\u044b\u0432\u0444\u044b\u0432\u0444\u0432\u0444",
+        "price": 122112,
+        "description": "\u0444\u044b\u0432\u0441\u044b\u0432\u0444\u044b\u0432\u0441\u0432\u0430\u0430\u0446\u0443\u0430\u0432\u0446\u0430"
+    },
+    {
+        "name": "qwwqdwqwd",
+        "price": 1212,
+        "description": "sdffdvfdvf"
+    },
+    {
+        "name": "dqwedqwdqwwq",
+        "price": 1221,
+        "description": "fghfghfgh"
     }
 ]
